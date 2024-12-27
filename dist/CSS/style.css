@@ -70,14 +70,16 @@ a {
   text-decoration: none;
 }
 
+.game .red-text {
+  text-shadow: 3px 3px 0px rgb(255, 255, 255);
+  color: red;
+}
 .game__points {
   max-width: 585px;
   margin: 0.5rem auto;
 }
-.game__points .red-text {
-  text-shadow: 3px 3px 0px rgb(255, 255, 255);
+.game__points .score {
   font-size: inherit;
-  color: red;
 }
 .game__caption {
   display: flex;
@@ -123,11 +125,24 @@ a {
   width: 585px;
   height: 585px;
   background-color: #dfdfdf;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 .game__display canvas {
   width: 585px;
   height: 585px;
+}
+.game__options {
+  text-shadow: 3px 3px 0px rgb(0, 0, 0);
+}
+.game__options p {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.game__options p span {
+  font-size: inherit;
 }
 
 /* Please Edit Below *//*# sourceMappingURL=style.css.map */

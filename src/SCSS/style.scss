@@ -87,16 +87,19 @@ a {
 
 // $$$Class Selectors
 .game {
-  &__points {
-    max-width: 585px;
-    margin: .5rem auto;
-
-    .red-text {
+  .red-text {
       @include text-shadow-white();
 
-      font-size: inherit;
       color: red;
     }
+    
+    &__points {
+      max-width: 585px;
+      margin: .5rem auto;
+      
+      .score {
+        font-size: inherit;
+      }
   }
 
   &__caption {
@@ -153,11 +156,27 @@ a {
     width: 585px;
     height: 585px;
     background-color: #dfdfdf;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 
     canvas {
       width: 585px;
       height: 585px;
+    }
+  }
+
+  &__options {
+    @include text-shadow();
+    
+    p {
+      font-size: 2.5rem;
+      text-align: center;
+
+      span {
+        font-size: inherit;
+      };
     }
   }
 }
